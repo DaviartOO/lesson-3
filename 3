@@ -1,0 +1,19 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string text = "Привет, мир!";
+        PrintTextWithAsterisks(text);
+    }
+
+    static void PrintTextWithAsterisks(string text)
+    {
+        int width = text.Length + 4;
+
+        Console.WriteLine(new string('*', width));
+        Console.WriteLine($"* {text} *");
+        Console.WriteLine(new string('*', width));
+    }
+}
